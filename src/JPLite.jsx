@@ -832,7 +832,24 @@ export default function JPLite() {
     }; }
     .has-envelope-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: ${audioColor}; margin-left: 4px; vertical-align: middle; }
     .countdown-badge { display: inline-flex; align-items: center; justify-content: center; background: #f59e0b; color: #000; border-radius: 10px; font-size: 10px; font-weight: 800; padding: 2px 5px; min-width: 34px; font-family: ui-monospace, monospace; line-height: 1.2; }
-  `;
+    ::-webkit-scrollbar {
+  width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888; 
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+    }`; 
 
   // ── Render ─────────────────────────────────────────────────────────────
   return (
